@@ -21,14 +21,15 @@ For this setup, you need a Windows Server, 2012R2 works good. On this server, a 
 ## Installation ##
 
 ### Arcgis Pro ###
-To publish mapservices, Arpcy is needed and therefore an Arcgis Pro installed on the server is needed. Obtain the installation files from Esri. Arcgis Pro 2.2 and 2.3 have been tested. 
+To publish mapservices, Arpcy is needed and therefore an Arcgis Pro installed on the server is needed. Obtain the installation files from Esri. Arcgis Pro 2.2 and 2.3 have been tested.\ 
 Install Arcgis Pro with the default options.
 
 ### Jenkins ### 
-'The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.' This is true and it's free, so download the Windows installer here: https://jenkins.io/download/thank-you-downloading-windows-installer-stable/
-Install Jenkins, 
-Go to Windows Services and configure the Jenkins service to run under the Service Account.
-Run the powershell script TODO. This powershell script configures Jenkins Service to interact with the desktop. This setting is only available in the services menu when the service runs under Local System Account, but this account has insufficient privileges. 'interact with the desktop' is required to get font symbology working with custom fonts. If custom fonts are used for point symbols and this 'interact with the desktop' setting is not set, the custom fonts will be replaced with default fonts and the symbology will be ugly.
+'The leading open source automation server, Jenkins provides hundreds of plugins to support building, deploying and automating any project.' This is true and it's free, so download the Windows installer here: https://jenkins.io/download/thank-you-downloading-windows-installer-stable/ \ 
+Install Jenkins,\   
+Go to Windows Services and configure the Jenkins service to run under the Service Account.  
+Run the powershell script TODO. This powershell script configures Jenkins Service to interact with the desktop. This setting is only available in the services menu when the service runs under Local System Account, but this account has insufficient privileges. 'interact with the desktop' is required to get font symbology working with custom fonts. If custom fonts are used for point symbols and this 'interact with the desktop' setting is not set, the custom fonts will be replaced with default fonts and the symbology will be ugly.\
+
 Script was taken from here: https://lostechies.com/keithdahlby/2011/08/13/allowing-a-windows-service-to-interact-with-desktop-without-localsystem/
 
 ## GIT ## 
